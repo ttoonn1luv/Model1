@@ -9,5 +9,35 @@
       "url": "http://localhost:5243"
     }
   ],
-  "paths": { }
+  "paths": {
+    "/ping": {
+      "get": {
+        "tags": [
+          "Model1"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "pattern": "^-?(?:0|[1-9]\\d*)$",
+                  "type": [
+                    "integer",
+                    "string"
+                  ],
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Model1"
+    }
+  ]
 }
