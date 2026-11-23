@@ -16,5 +16,46 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Model1.Controllers.RestaurantController",
+    "Method": "List",
+    "RelativePath": "system/api/restaurant/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNum",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "restaurantName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "restaurantType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Model1.Models.ApiResult",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
